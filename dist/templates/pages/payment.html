@@ -1,0 +1,356 @@
+{% set title = "payment" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+
+<main>
+  <section class="p-50-0">
+    <div class="container">
+      <div class="title-content">
+        <h2>Оформить покупку</h2>
+      </div>
+      <form action="#" class="payment-form">
+
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="payment-legend-block">
+              <div class="payment-form-legend">Персональные данные</div>
+              <span class="dashed-border"></span>
+            </div>
+            <div class="row m-b-50 ">
+              <div class="col-xl-6">
+                <div class="payment-user-block">
+                  <label class="payment-form-label" for="name"> <span>Имя</span>
+                    <input class="payment-form-input" type="text" placeholder="Фалончиева Палончи Салончиевна ">
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="payment-user-block">
+                  <label class="payment-form-label" for="name"> <span>Фамилия</span>
+                    <input class="payment-form-input" type="text" placeholder="Фалончиева Палончи Салончиевна ">
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <label class="payment-form-label" for="selector"> <span>Номер телефона</span>
+                  <input class="payment-form-input" id="selector" type="text" value="+998 (--)--- -- --" />
+                </label>
+              </div>
+            </div>
+            <div class="payment-legend-block">
+              <div class="payment-form-legend">Способ получения</div>
+              <span class="dashed-border"></span>
+            </div>
+            <div class="tab p-0-0-20-0">
+              <div>
+                <div>
+                  <ul class="tabs">
+                    <li class="current">
+                      <a href="#!" class="filter-checked delivery-checked">
+                        <input type="radio" id="d1" name="f"> <label for="d1">Доставка</label>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="filter-checked delivery-checked">
+                        <input type="radio" id="d2" name="f"><label for="d2">Я сам заберу</label>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab_content">
+                <div class="tabs_item">
+                  <div class="payment-user-block row">
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Город / Область</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Район</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="payment-user-block">
+                    <label class="payment-form-label" for="name"> <span>Адрес</span>
+                      <input class="payment-form-input" type="text" placeholder="Детальное адрес"></label>
+                  </div>
+                  <div class="payment-user-block">
+                    <label class="payment-form-label" for="name"> <span>Дата доставки</span>
+                      <input class="payment-form-input" type="date" id="name" placeholder="Детальное адрес"></label>
+                  </div>
+                </div>
+                <div class="tabs_item">
+                  <div class="payment-user-block row">
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Выберите филиал</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-legend-block">
+              <div class="payment-form-legend">Способ оплаты</div><span class="dashed-border"></span>
+            </div>
+            <div class="tab">
+              <ul class="tabs">
+                <li class="current">
+                  <label class="current-type" for="currentType1">
+                    <input type="radio" id="currentType1" name="current" hidden>
+                    <img class="img-gr" src="./images/svg/currency20.svg" alt=":(">
+                    <img class="img-w" src="./images/svg/currency-w.svg" alt=":(">
+                    <span class="current-type-text">Наличные</span>
+                    <span class="bg-blu"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class="current-type" for="currentType2">
+                    <input type="radio" id="currentType2" name="current" hidden>
+                    <img class="img-gr" src="./images/svg/card20.svg" alt=":(">
+                    <img class="img-w" src="./images/svg/card-w.svg" alt=":(">
+                    <span class="current-type-text">Терминал</span>
+                    <span class="bg-blu"></span>
+                  </label>
+                </li>
+              </ul>
+              <div class="tab_content">
+                <div class="row m-b-40">
+                  <div class="col-xl-6">
+                    <div>
+                      <label class="payment-form-label" for="cardnumber"> <span>Номер карты</span>
+                        <input class="payment-form-input cardnumber" id="cardnumber" type="text" pattern="[0-9]*"
+                          inputmode="numeric" placeholder="---- ---- ---- ---- ">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div>
+                      <label class="payment-form-label" for="securitycode"><span>Срок действия</span>
+                        <input class="payment-form-input" type="text" id="securitycode" pattern="[0-9]*"
+                          inputmode="numeric" placeholder="--/--"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-6">
+                    <label class="upload-box" for="upload1">
+                      <div class="upload-file"> <img class="upload-bg" src="./images/svg/password1.svg" alt=":("> </div>
+                      <div class="upload-title">
+                        <div>Лицевая часть</div><span>Паспорта</span>
+                      </div>
+                      <div class="upload-btn"><input type="file" id="upload1" class="upload-image" hidden>
+                        <span class="upload-text">Загрузить</span>
+                        <div class="upload-icon">
+                          <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                          <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-xl-6">
+                    <label class="upload-box" for="upload2">
+                      <div class="upload-file"> <img class="upload-bg" src="./images/svg/password2.svg" alt=":("> </div>
+                      <div class="upload-title">
+                        <div>Прописка в</div><span>Паспорта</span>
+                      </div>
+                      <div class="upload-btn"><input type="file" id="upload2" class="upload-image" hidden>
+                        <span class="upload-text">Загружается</span>
+                        <div class="upload-icon">
+                          <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                          <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                          <!-- <div class="spinner">
+                          </div> -->
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-xl-6">
+                    <label class="upload-box" for="upload3">
+                      <div class="upload-file selfi"> <img class="upload-bg" src="./images/png/password3.png" alt=":(">
+                      </div>
+                      <div class="upload-title">
+                        <div>Селфи с </div><span>Паспортам</span>
+                      </div>
+                      <div class="upload-btn"><input type="file" id="upload3" class="upload-image" hidden>
+                        <span class="upload-text">Загружено</span>
+                        <div class="upload-icon">
+                          <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                          <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 offset-xl-2">
+            <div class="tab-descrip-block">
+              <ul class="product-info-block">
+                <li class="product-info-item">
+                  <div class="product-brand-item">Продукт</div>
+                  <div class="product-brand-name">3</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Скидка</div>
+                  <div class="product-brand-name"> <span>0</span> сум</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">ID покупки</div>
+                  <div class="product-brand-name">EF12569</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-name product-item-price"> Всего</div>
+                  <div class="product-brand-name product-item-price"><span class="">1 000 299 998
+                    </span><span>сум</span>
+                  </div>
+                </li>
+                <li class="basket-product-btns">
+                <li class="product-user-btn-wrap">
+                  <div class="margin-auto">
+                    <a href="#!" class="main-btn  disabled">
+                      <span>Оплатить</span>
+                      <span class="btn-icon-circle"><img src="./images/svg/currency-w.svg" alt=":("></span>
+                    </a>
+                  </div>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}
+
+<!-- <div class="tabs">
+  <ul id="tabs-nav-delivery">
+    <li>
+      <a class="" href="#tabdeliver1">
+        <div class="filter-checked delivery-checked"><input type="radio" id="d1" name="f"><label
+            for="d1">Доставка</label></div>
+      </a>
+
+    </li>
+    <li>
+      <a class="" href="#tabdeliver2">
+        <div class="filter-checked delivery-checked"><input type="radio" id="d2" name="f"><label for="d2">Я
+            сам
+            заберу</label></div>
+      </a>
+    </li>
+  </ul>
+  <div id="tabs-content">
+    <div id="tabdeliver1" class="tab-content">
+      <div class="payment-user-block payment-select-block">
+        <div class=" payment-form-label">
+          <div class=" payment-options-container ">
+            <div class="payment-option ">
+              <input class="payment-radio" type="radio" name="payment" id="pay1">
+              <label for="pay1">Ташкент 1</label>
+            </div>
+            <div class="payment-option">
+              <input class="payment-radio" type="radio" name="payment" id="pay2">
+              <label for="pay2">Andijon 2</label>
+            </div>
+            <div class="payment-option">
+              <input class="payment-radio" type="radio" name="payment" id="pay3">
+              <label for="pay3">Qoraqalpog'iston 3</label>
+            </div>
+            <div class="payment-option">
+              <input class="payment-radio" type="radio" name="payment" id="pay4">
+              <label for="pay4">Surxondaryo</label>
+            </div>
+          </div>
+          <span>Город / Область</span>
+          <div class="payment-selected payment-form-input">Ташкент</div>
+        </div>
+        <div class=" payment-form-label2">
+          <div class=" payment-options-container2 ">
+            <div class="payment-option2 ">
+              <input class="payment-radio2" type="radio" name="payment" id="pay21">
+              <label for="pay21">Юнусабадский 1</label>
+            </div>
+            <div class="payment-option2 ">
+              <input class="payment-radio2" type="radio" name="payment" id="pay22">
+              <label for="pay22">Юнусабадский 2</label>
+            </div>
+            <div class="payment-option2 ">
+              <input class="payment-radio2" type="radio" name="payment" id="pay23">
+              <label for="pay23">Юнусабадский 3</label>
+            </div>
+            <div class="payment-option2 ">
+              <input class="payment-radio2" type="radio" name="payment" id="pay24">
+              <label for="pay24">Юнусабадский</label>
+            </div>
+          </div>
+          <span>Район</span>
+          <div class="payment-selected2 payment-form-input2">Юнусабадский</div>
+        </div>
+      </div>
+      <div class="payment-user-block">
+        <label class="payment-form-label" for="name"> <span>Адрес</span>
+          <input class="payment-form-input" type="text" id="name" placeholder="Детальное адрес"></label>
+      </div>
+      <div class="payment-user-block">
+        <label class="payment-form-label" for="name"> <span>Дата доставки</span>
+          <input class="payment-form-input" type="date" id="name" placeholder="Детальное адрес"></label>
+      </div>
+    </div>
+    <div id="tabdeliver2" class="tab-content">
+      <div class="payment-user-block payment-select-block select--mod ">
+        <div class=" payment-form-label3">
+          <div class=" payment-options-container3 ">
+            <div class="payment-option3 ">
+              <input class="payment-radio3" type="radio" name="payment" id="pay11">
+              <label for="pay11">Ташкент 1</label>
+            </div>
+            <div class="payment-option3">
+              <input class="payment-radio3" type="radio" name="payment" id="pay22">
+              <label for="pay22">Andijon 2</label>
+            </div>
+            <div class="payment-option3">
+              <input class="payment-radio3" type="radio" name="payment" id="pay33">
+              <label for="pay33">Qoraqalpog'iston 3</label>
+            </div>
+            <div class="payment-option3">
+              <input class="payment-radio3" type="radio" name="payment" id="pay44">
+              <label for="pay44">Surxondaryo</label>
+            </div>
+          </div>
+          <span>Выберите филиал</span>
+          <div class="payment-selected3 payment-form-input3">Ташкент</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

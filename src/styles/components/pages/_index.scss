@@ -1,0 +1,250 @@
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  min-height: 195px;
+  max-height: 195px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(93, 95, 239, 0.05);
+  border-radius: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @media (max-width: 992px) {
+      margin-bottom: 30;
+      margin-top: 30px;
+      padding: 15px 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+
+.feature-content-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3px;
+  @media (max-width: 767px) {
+    justify-content: start;
+  }
+}
+
+.feature-content-inner2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-logo1 {
+  width: 80px;
+  height: 120px;
+  margin-right: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  @media (max-width: 992px) {
+    width: 120px;
+  }
+
+  & ~ div {
+    flex: 1;
+    @media (max-width: 768px) {
+      flex: auto;
+    }
+    @media (max-width: 992px) {
+      flex: 0 1 40%;
+    }
+  }
+}
+
+.feature-logo2 {
+  width: 121px;
+  height: 55px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.feature-logo3 {
+  margin-top: 7px;
+  width: 195px;
+  height: 134px;
+  margin-left: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.feature-content-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: $colorBlack;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  @media (max-width: 992px) {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}
+
+.feature-content-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(14, 24, 44, 0.7);
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.feature-sublogo {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  background: #f7f7fe;
+
+  img {
+    mix-blend-mode: luminosity;
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+  }
+}
+
+.feature-content2 {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #f6e9e9;
+  padding: 25px 20px 25px 30px;
+  position: relative;
+  min-height: 195px;
+  max-height: 195px;
+  height: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 35px;
+    top: 65%;
+    background: url(../images/svg/truck.svg) no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    background: url(../images/svg/truck.svg) no-repeat;
+    background-size: contain;
+    width: 55px;
+    height: 55px;
+  }
+  @media (max-width: 768px) {
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+
+//==================================================================
+
+.feature-card {
+  padding: 20px;
+  background: rgba(14, 24, 44, 0.01);
+  border: 1px solid rgba(93, 95, 239, 0.1);
+  border-radius: 8px;
+  min-height: 145px;
+  @media (max-width: 992px) {
+    margin-bottom: 20px;
+    display: none;
+  }
+}
+
+.feature-card-icon {
+  display: flex;
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+
+  img {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto 15px 0;
+    @media (max-width: 992px) {
+      margin: auto;
+    }
+  }
+}
+
+.feature-card-text {
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $colorBlack;
+  @media (max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+
+  & > * {
+    margin-bottom: 10px;
+  }
+
+  &.hide {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  h2 {
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: $colorBlack;
+    @media (max-width: 992px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .main-btn {
+      display: none;
+    }
+  }
+}
+//============================================================

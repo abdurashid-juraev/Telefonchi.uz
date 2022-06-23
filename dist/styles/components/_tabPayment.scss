@@ -1,0 +1,38 @@
+.tab {
+  position: relative;
+}
+.tabs {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  li {
+    &:not(:last-child) {
+      margin-right: 17px;
+      @media (max-width: 992px) {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+.tab_content {
+  margin-top: 30px;
+}
+.tabs_item {
+  display: none;
+
+  &:first-child {
+    display: none;
+  }
+}
+.current .payment-pay-link {
+  background-color: #5d5fef;
+  span {
+    color: #ffffff;
+  }
+  .img-gr {
+    display: none;
+  }
+  .img-w {
+    display: block;
+  }
+}

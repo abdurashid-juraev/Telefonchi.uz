@@ -1,0 +1,12 @@
+.product {
+  &__add_to_cart {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(60, 85, 165, 0.2);
+    border-radius: 100%;
+    margin-top: 11px;
+  }
+}

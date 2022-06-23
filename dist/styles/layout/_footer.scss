@@ -1,0 +1,129 @@
+.footer {
+  padding: 60px 0 10px 0;
+  background-color: $colorBlack;
+  @media (max-width: 992px) {
+    .row {
+      display: none;
+    }
+  }
+}
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    & > li {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+.footer-primary-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorWhite;
+  margin-bottom: 18px;
+  @media (max-width: 992px) {
+    margin-bottom: 25px;
+  }
+}
+.footer-nav-wrap {
+  margin-bottom: 60px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.footer-nav-menu {
+  flex: 1;
+  margin-top: 18px;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+.footer-nav-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorWhite;
+  opacity: 0.8;
+}
+.footer-block {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 24px;
+  margin-bottom: 30px;
+}
+.footer-social-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.footer-social-inner {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 56%;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
+  }
+}
+.footer-social-menu {
+  display: flex;
+  align-items: center;
+  @media (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+  li {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+.footer-cop {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $colorWhite;
+  opacity: 0.7;
+  @media (max-width: 992px) {
+    margin-bottom: 40px;
+  }
+}
+.footer-text {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: $colorWhite;
+  opacity: 0.7;
+  @media (max-width: 992px) {
+    margin-bottom: 30px;
+  }
+}
+.nav-down {
+  bottom: 25px;
+  transition: all 0.3s;
+}
+.nav-up {
+  bottom: -80px;
+}

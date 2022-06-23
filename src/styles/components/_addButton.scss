@@ -1,0 +1,16 @@
+.add__product__button {
+  padding: 8px 10px 8px 24px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffc105;
+  border-radius: 13px;
+  color: #ffc105;
+  transition: all 0.2s;
+  svg {
+    margin-left: 10px;
+  }
+  &:hover {
+    background-color: #ffc105;
+    color: #fff;
+  }
+}

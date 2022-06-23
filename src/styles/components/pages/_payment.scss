@@ -1,0 +1,237 @@
+.payment-form {
+  padding-top: 50px;
+}
+.payment-form-legend {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(14, 24, 44, 0.5);
+  margin-right: 30px;
+  flex: 0 0 auto;
+}
+.payment-legend-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.dashed-border {
+  border-top: 2px dashed rgba(14, 24, 44, 0.4);
+  width: 100%;
+}
+.payment-user-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  input[type="date"] {
+    display: block;
+    max-width: 321px;
+  }
+  @media (max-width: 992px) {
+    margin-bottom: 0;
+  }
+}
+.payment-form-label,
+.payment-form-label2 {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(14, 24, 44, 0.8);
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  textarea {
+    width: 100%;
+    text-align: left;
+    transition: all 0.2s;
+    &:focus {
+      border-color: rgba(93, 95, 239, 1);
+    }
+    &:focus-within {
+      border-color: rgba(93, 95, 239, 1);
+    }
+  }
+}
+.payment-form-input {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  background-color: rgba(14, 24, 44, 0.04);
+  border: 1px solid rgba(14, 24, 44, 0.1);
+  border-radius: 8px;
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorBlack;
+  @media (max-width: 992px) {
+    margin-bottom: 30px;
+  }
+}
+.tab {
+  .filter-checked {
+    margin: 0;
+  }
+  .filter-checked input:checked + label::before {
+    background-color: #5d5fef;
+    border: 2px solid #5d5fef;
+  }
+}
+.delivery-checked {
+  padding: 14px 15px;
+  border: 1px solid #5d5fef;
+  border-radius: 6px;
+
+  label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBlack;
+  }
+}
+.payment-select-block {
+  display: flex;
+}
+.payment-options-container {
+  padding: 0;
+  width: 100%;
+  top: 115px;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 50px 10px rgba(110, 113, 121, 0.15);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+//==================================================
+
+.payment-form-input {
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s;
+  height: 48px;
+  &:focus {
+    border-color: rgba(93, 95, 239, 1);
+  }
+  &:focus-within {
+    border-color: rgba(93, 95, 239, 1);
+  }
+}
+.payment-pay-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.payment-pay-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 7px;
+  border: 1px solid #5d5fef;
+  border-radius: 6px;
+  transition: all 0.3s;
+
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBlack;
+  }
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.payCard-info {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  margin-bottom: 0;
+}
+.payCard-info-show {
+  opacity: 1;
+  height: 74px;
+  overflow: visible;
+  margin-bottom: 50px;
+}
+.margin-auto {
+  margin: auto;
+}
+//==========================================================
+// loader
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ffffffe1;
+  border-top-color: #ffc105;
+  border-radius: 50%;
+  animation: spin 1.2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+//=========================================================
+.current-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 133px;
+  padding: 15px 14px 15px 15px;
+  border: 1px solid #5d5fef;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  input ~ .img-w {
+    display: none;
+  }
+  input {
+    &:checked ~ span,
+    .bg-blu {
+      transition: all 0.1s;
+      color: #fff;
+      background-color: #5d5fef;
+    }
+    &:checked ~ .img-w {
+      display: block;
+    }
+    &:checked ~ .img-gr {
+      display: none;
+    }
+  }
+  img {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: auto;
+  }
+}
+.bg-blu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.current-type-text {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorBlack;
+}
+.upload-icon .download-show {
+  display: none;
+}

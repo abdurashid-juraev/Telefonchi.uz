@@ -1,0 +1,33 @@
+{% set title = "Compare Empty" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+
+<main>
+  <section class="p-50-0">
+    <div class="container">
+      <div class="title-content">
+        <h2>Сравнение</h2>
+      </div>
+      <div class="compare__empty_block">
+        <div class="row">
+          <div class="offset-md-4 col-md-4">
+            <div class="empty__select-to">
+              <img src="./images/svg/compare2.svg" alt="">
+              <div class="empty__text">
+                Выберите какую продукту вы хотите сравнивать
+              </div>
+              <a class="empty__button" href="singleCategory.html">Выбрать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

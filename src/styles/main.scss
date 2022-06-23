@@ -1,0 +1,66 @@
+* {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #00000030;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #00000030;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+@import "../styles/utilities/fonts";
+@import "../styles/utilities/reset.scss";
+@import "../styles/utilities/variables";
+@import "../styles/utilities/mixins";
+@import "../styles/layout/header";
+@import "./components/_swiper";
+@import "./components/pages/index";
+@import "../styles/layout/_footer";
+@import "./components/_cardCategory";
+@import "./components/select";
+@import "./components/mainBtn";
+@import "./components/_cardSecondary";
+@import "./components/brandCard";
+@import "./components/appBlock";
+@import "./components/pages/singleCategory";
+@import "./components/yellowCheckbox";
+@import "./components/filterRange";
+@import "./components/pages/singleProduct";
+@import "./components/colorPicker";
+@import "./components/productTab";
+@import "./components/pages/basket";
+@import "./components/pages/payment";
+@import "./components/pages/paymentSingle";
+@import "./components/paymentModal";
+@import "./components/tabPayment";
+@import "./components/rankModal";
+@import "./components/pages/profile";
+@import "./components/pages/compare";
+@import "./components/pages/empty";
+@import "./components/addButton";
+@import "./components/pages/product";
+@import "./components/login";
+@import "./components/secondaryBtn";
+@import "./components/pages/reg";
+@import "./components/pages/shops";
+@import "./components/pages/mybuyings";
+@import "./components/pages/404";
+@import "./components/pages/myCardNew";

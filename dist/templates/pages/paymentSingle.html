@@ -1,0 +1,242 @@
+{% set title = "payment-single" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+
+<main>
+  <section class="p-50-0">
+    <div class="container">
+      <div class="title-content">
+        <h2>Оформление заказа в рассрочку</h2>
+      </div>
+      <form action="#" class="payment-form">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="payment-legend-block">
+              <div class="payment-form-legend">Персональные данные </div><span class="dashed-border"></span>
+            </div>
+            <div class="tab">
+              <div>
+                <div>
+                  <ul class="tabs">
+                    <li>
+                      <label class="filter-checked delivery-checked">
+                        <input type="radio" id="d1" name="f"> <label for="d1">Доставка</label>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-checked delivery-checked">
+                        <input type="radio" id="d2" name="f"><label for="d2">Я сам заберу</label>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab_content">
+                <div class="tabs_item">
+                  <div class="payment-user-block row">
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Город / Область</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Район</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="payment-user-block">
+                    <label class="payment-form-label" for="name"> <span>Адрес</span>
+                      <input class="payment-form-input" type="text" id="name" placeholder="Детальное адрес"></label>
+                  </div>
+                  <div class="payment-user-block">
+                    <label class="payment-form-label" for="name"> <span>Дата доставки</span>
+                      <input class="payment-form-input" type="date" id="name" placeholder="Детальное адрес"></label>
+                  </div>
+                </div>
+                <div class="tabs_item">
+                  <div class="payment-user-block row">
+                    <div class="col-xl-6">
+                      <label class="payment-form-label" for="name"> <span>Выберите филиал</span></label>
+                      <select class="single  payment-form-input" name="state">
+                        <option value="v1">Toshkent</option>
+                        <option value="v2">Samarqand</option>
+                        <option value="v3">Buxoro</option>
+                        <option value="v4">Farg'ona</option>
+                        <option value="v5">Andijon</option>
+                        <option value="v6">Namangan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-legend-block">
+              <div class="payment-form-legend">Способ оплаты</div><span class="dashed-border"></span>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="m-b-40">
+                    <label class="payment-form-label" for="cardnumber"> <span>Номер карты</span>
+                      <input class="payment-form-input cardnumber" id="cardnumber" type="text" pattern="[0-9]*"
+                        inputmode="numeric" placeholder="---- ---- ---- ---- ">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="m-b-40">
+                    <label class="payment-form-label" for="securitycode"><span>Срок действия</span>
+                      <input class="payment-form-input" type="text" id="securitycode" pattern="[0-9]*"
+                        inputmode="numeric" placeholder="--/--"></label>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <label class="upload-box" for="upload1">
+                    <div class="upload-file"> <img class="upload-bg" src="./images/svg/password1.svg" alt=":("> </div>
+                    <div class="upload-title">
+                      <div>Лицевая часть</div><span>Паспорта</span>
+                    </div>
+                    <div class="upload-btn"><input type="file" id="upload1" class="upload-image" hidden>
+                      <span class="upload-text">Загрузить</span>
+                      <div class="upload-icon">
+                        <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                        <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-xl-6">
+                  <label class="upload-box" for="upload2">
+                    <div class="upload-file"> <img class="upload-bg" src="./images/svg/password2.svg" alt=":("> </div>
+                    <div class="upload-title">
+                      <div>Прописка в</div><span>Паспорта</span>
+                    </div>
+                    <div class="upload-btn"><input type="file" id="upload2" class="upload-image" hidden>
+                      <span class="upload-text">Загрузить</span>
+                      <div class="upload-icon">
+                        <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                        <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                        <!-- <div class="spinner">
+                        </div> -->
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-xl-6">
+                  <label class="upload-box" for="upload3">
+                    <div class="upload-file selfi"> <img class="upload-bg" src="./images/png/password3.png" alt=":(">
+                    </div>
+                    <div class="upload-title">
+                      <div>Селфи с </div><span>Паспортам</span>
+                    </div>
+                    <div class="upload-btn"><input type="file" id="upload3" class="upload-image" hidden>
+                      <span class="upload-text">Загрузить</span>
+                      <div class="upload-icon">
+                        <img class="download-hide" src="./images/svg/download-w.svg" alt=":(">
+                        <img class="download-show" src="./images/svg/checkmarked.svg" alt=":(">
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-xl-6">
+                  <div class="upload-box-warning">
+                    <div class="upload-warning"> <img src="./images/svg/warning.svg" alt=":("> </div>
+                    <p class="upload-warning-text">
+                      Сохранить эти файли чтобы заполнить этот поле следуюший раз автоматический ?
+                    </p>
+                    <div class="upload-warning-btns">
+                      <button class="upload-warning-no" type="button">Нет</button>
+                      <button class="upload-warning-yes" type="button">Да</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <div class="upload-file-block">
+
+
+
+
+            </div> -->
+            <div class="payment-user-block">
+              <label class="payment-form-label" for="name"> <span>Сообщение</span>
+                <textarea class="payment-form-input tx" rows="none" type="text" id="name"
+                  placeholder="Напишите... "></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="col-xl-4 offset-xl-2">
+            <div class="tab-descrip-block">
+              <ul class="product-info-block">
+                <li class="product-info-item">
+                  <div class="product-brand-item">Продукт</div>
+                  <div class="product-brand-name">Samsung Galaxy A20</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Первоначальный взнос</div>
+                  <div class="product-brand-name"> <span>560 000</span> сум</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Срок рассрочки</div>
+                  <div class="product-brand-name">9</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Ежемесячный платёж</div>
+                  <div class="product-brand-name"> <span>199 000</span> сум</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Количество</div>
+                  <div class="product-brand-name">1</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Скидка</div>
+                  <div class="product-brand-name"> <span>0</span> сум</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">ID покупки</div>
+                  <div class="product-brand-name">EF12569</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-name product-item-price">Обшая сумма оплаты</div>
+                  <div class="product-brand-name product-item-price"><span class="">1 000 299 998
+                    </span><span>сум</span>
+                  </div>
+                </li>
+                <li class="basket-product-btns">
+                  <div class="">
+                    <a href="paymentSingle.html" class="main-btn">
+                      <span> Купить рассрочку</span>
+                      <span class="btn-icon-circle "><img src="./images/svg/currency-w.svg" alt=":("></span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}

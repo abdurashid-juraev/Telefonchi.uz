@@ -1,0 +1,294 @@
+.payment-select-box,
+.payment-select-box2 {
+}
+// .options-container,
+// .payment-options-container,
+// .payment-options-container2 {
+//   transition: all 0.5s;
+//   overflow: hidden;
+//   opacity: 0;
+//   visibility: hidden;
+//   order: 1;
+//   transition: all 0.3s;
+//   position: absolute;
+//   right: 0;
+//   top: 60px;
+//   left: auto;
+//   background: #ffffff;
+//   box-shadow: 0px 10px 50px 10px rgba(110, 113, 121, 0.15);
+//   border-radius: 8px;
+// }
+.select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -8px;
+  // @media (max-width: 992px) {
+  //   position: fixed;
+  //   top: 30px;
+  //   right: 20px;
+  // }
+}
+.select-link {
+  margin: 0 8px !important;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  &:hover {
+    color: $colorBlue;
+  }
+  &.active {
+    color: $colorBlue;
+  }
+}
+.select-line {
+  display: block;
+  width: 0.5px;
+  height: 15px;
+  background: $lightGray;
+  transform: rotate(15deg);
+}
+.select-mob {
+  display: none;
+  @media (max-width: 992px) {
+    display: flex;
+  }
+}
+.select-decstop {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.options-container2 {
+  width: max-content;
+  transition: all 0.5s;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  order: 1;
+  transition: all 0.3s;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  left: auto;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(21, 42, 108, 0.12);
+  border-radius: 8px;
+}
+.activ {
+  max-height: max-content;
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.selected {
+  position: relative;
+  padding-right: 13px;
+  text-align: right;
+  transition: all 0.3s;
+  &::after {
+    content: "";
+    background-image: url(../images/svg/down.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: 1px;
+  }
+}
+.payment-selected,
+.payment-selected2 {
+  position: relative;
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url(../images/svg/down-20.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: 15px;
+    top: 1px;
+  }
+}
+.selected2 {
+  position: relative;
+  padding-right: 13px;
+  text-align: right;
+  transition: all 0.3s;
+  &::after {
+    content: "";
+    background-image: url(../images/svg/down.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: 1px;
+  }
+}
+.options-container.activ + .selected::after {
+  transform: rotateX(180deg);
+  transition: all 0.3s;
+}
+.payment-options-container.activ ~ span ~ .payment-selected::after {
+  transform: rotateX(180deg);
+  transition: all 0.3s;
+}
+.payment-options-container2.activ ~ span ~ .payment-selected2::after {
+  transform: rotateX(180deg);
+  transition: all 0.3s;
+}
+
+.options-container2.activ ~ .nav-user-link .selected2::after {
+  transform: rotateX(180deg);
+  transition: all 0.2s;
+}
+.option,
+.payment-option,
+.payment-option2 {
+  label {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(14, 24, 44, 0.04);
+    }
+  }
+
+  &:hover {
+    color: $colorBlue;
+    cursor: pointer;
+  }
+}
+.option2 {
+  label {
+    cursor: pointer;
+  }
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    color: $colorBlue;
+    cursor: pointer;
+  }
+}
+.radio,
+.payment-radio,
+.payment-radio2 {
+  display: none;
+}
+//==================================================================
+.currency-dropdown {
+  position: relative;
+  z-index: 25;
+  cursor: pointer;
+  display: none !important;
+}
+.options-container {
+  top: 60px;
+}
+.option2 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorBlack;
+}
+//==========================================
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: pointer;
+}
+//=========================================
+.select2-container {
+  display: block;
+  margin-top: 5px;
+  @media (max-width: 992px) {
+    margin-bottom: 30px;
+  }
+  .select2-selection--single {
+    height: 50px;
+    position: relative;
+    background-color: rgba(14, 24, 44, 0.04);
+    border: 1px solid rgba(14, 24, 44, 0.1);
+    border-radius: 8px;
+    &:focus {
+      border-color: rgba(93, 95, 239, 1);
+    }
+
+    .select2-selection__rendered {
+      padding: 15px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: $colorBlack;
+      height: 48px;
+    }
+
+    .select2-selection__arrow {
+      transition: all 0.2s;
+      top: 14px;
+      right: 14px;
+      background-image: url(../images/svg/down-20.svg);
+      background-repeat: no-repeat;
+
+      & b {
+        display: none;
+      }
+    }
+  }
+  .select2-container--open .select2-dropdown--below {
+    overflow: hidden;
+  }
+
+  .select2-results__option {
+    padding: 15px;
+  }
+  .select2-results__options {
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+}
+.select2-container--open .select2-dropdown {
+  box-shadow: 0px 4px 40px rgba(21, 42, 108, 0.12);
+  border: 0;
+  border-radius: 8px;
+}
+
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--single {
+  border-radius: 8px;
+}
+
+.select2-search--dropdown .select2-search__field {
+  padding: 15px;
+  border-radius: 8px;
+  background: url(../images/svg/search-b.svg) no-repeat;
+  background-position-y: center;
+  background-position-x: 95%;
+  cursor: pointer;
+  background-color: rgba(14, 24, 44, 0.04);
+
+  &:focus {
+    border-color: rgba(93, 95, 239, 1);
+  }
+}
+.select2-container--open {
+  .select2-selection--single .select2-selection__arrow {
+    position: absolute;
+    top: 8px;
+    transform: rotateX(180deg);
+  }
+}

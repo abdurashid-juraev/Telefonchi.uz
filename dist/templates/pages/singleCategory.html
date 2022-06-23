@@ -1,0 +1,829 @@
+{% set title = "singleCategory" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+
+<main>
+  <section class="p-30-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3">
+          <aside>
+            <div class="filter-block">
+              <h3 class="filter-title">Техника для дома</h3>
+              <ul class="filter-inner">
+                <li class="filter-item-block">
+                  <h4 class="">Инструменты и автотовары</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Цифровое телевидение</h4>
+                  <ul class="filter-item item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f11"><label for="f11">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f21"><label for="f21">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f31"><label for="f31">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f41"><label for="f41">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f51"><label for="f51">Автозапчасти</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f61"><label for="f61">Автомобильные
+                        духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f71"><label for="f71">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f81"><label for="f81">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f91"><label for="f91">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Для дома и офиса</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Посуда</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Техника для кухни</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Телевизоры, видео и аудио</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Компьютеры и оргтехника</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Кондиционеры</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4>Техника для красоты и
+                    здоровья</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">Руль</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Тарпетки</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f3"><label for="f3">Балоны</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f4"><label for="f4">Чехолы</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f5"><label for="f5">Автозапчасти</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f6"><label for="f6">Автомобильные духи</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f7"><label for="f7">Авто фары</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f8"><label for="f8">Лабовые</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f9"><label for="f9">Баковые</label></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-title">Характеристики</h3>
+              <ul class="filter-inner">
+                <li class="filter-item-block">
+                  <h4 class="">Экран</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1">AMOLED</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">OLED</label></li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2">Retina</label></li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4 class="">Память (ОЗУ)</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1"><span>8</span> GB</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>16</span> GB</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>32</span> GB</label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4 class="">Память</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1"><span>8</span> GB</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>16</span> GB</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>32</span> GB</label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter-item-block">
+                  <h4 class="">Камера</h4>
+                  <ul class="filter-item  item--mod">
+                    <li class="filter-checked"><input type="checkbox" id="f1"><label for="f1"><span>12</span> PX</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>24</span> PX</label>
+                    </li>
+                    <li class="filter-checked"><input type="checkbox" id="f2"><label for="f2"><span>104</span>
+                        PX</label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-title">Бренды</h3>
+              <ul class="filter-brand-block class">
+                <li class="filter-checked"><input type="checkbox" id="b1"><label for="b1">Samsung</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b2"><label for="b2">Panasonic</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b3"><label for="b3">Artel</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b4"><label for="b4">Goodwell</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b5"><label for="b5">Hoffman</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b6"><label for="b6">Avalon</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b7"><label for="b7">Shivaki</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b7"><label for="b7">Shivaki</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b7"><label for="b7">Shivaki</label></li>
+                <li class="filter-checked"><input type="checkbox" id="b7"><label for="b7">Shivaki</label></li>
+              </ul>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-title">Цена</h3>
+              <div>
+                <div class="wrapper">
+                  <div class="range-slider">
+                    <input type="number" class="js-range-slider" value="" />
+                  </div>
+                  <hr>
+                  <div class="extra-controls form-inline">
+                    <div id="form-group">
+                      <input type="number" class="js-input-from form-control" value="0" />
+                      <input type="number" class="js-input-to form-control" value="0" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-title">Цвета</h3>
+              <div class="filter-color">
+                <ul class="circle-radio-wrapper">
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="green" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="blue" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="red" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="pink" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="orange" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="black" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="violet" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="circle-radio">
+                      <input type="radio" name="colors" data-color="navy" hidden>
+                      <span class="color-border"><span class="color-bg"></span></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-block">
+              <h3 class="filter-title">Классы</h3>
+              <ul class="filter-brand-block class">
+                <li class="filter-checked"><input type="checkbox" na id="b11"><label for="b11">A+++</label></li>
+                <li class="filter-checked"><input type="checkbox" na id="b22"><label for="b22">A+</label></li>
+                <li class="filter-checked"><input type="checkbox" na id="b33"><label for="b33">A+</label></li>
+                <li class="filter-checked"><input type="checkbox" na id="b44"><label for="b44">B+</label></li>
+                <li class="filter-checked"><input type="checkbox" na id="b55"><label for="b55">B</label></li>
+                <li class="filter-checked"><input type="checkbox" na id="b66"><label for="b66">C+</label></li>
+
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-xl-9">
+          <div class="row">
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ... Смартфон
+                        Samsung Galaxy S21 Ultra 5G 12/256GB (чер ... Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер
+                        ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+            <div class="col-xl-4">
+              <article class="card-wrap">
+                <a href="singleCategory.html" class="card-category">
+                  <div class="card-category-thumb  card-thumb--mod">
+                    <div class="card-category-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="card-category-info   card-category--mod">
+                    <div>
+                      <div class="card-category-name">Телефон</div>
+                      <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-price-block">
+                  <div class="card-price-inner">
+                    <div class="price">
+                      <!-- <div class="card-price-discount">9 000 000 сум</div> -->
+                      <div class="card-item-price "><span>7 999 000 </span><span>сум</span> </div>
+                    </div>
+                    <button class="card-shopping-icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z"
+                          fill="#5D5FEF" />
+                        <path
+                          d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                          fill="#5D5FEF" />
+                      </svg>
+                    </button>
+                    <div class="card-order-btn mod--btn"><span>Добавлено</span><span><img
+                          src="./images/svg/checkmarked.svg" alt=":("></span>
+                    </div>
+                  </div>
+                </div>
+                <button class="card-like-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_209_2691)">
+                      <path
+                        d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                        stroke="#5D5FEF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_209_2691">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 offset-xl-3">
+          <nav class="pagination-nav" aria-label="navigation">
+            <ul class="pagination">
+              <li class="page-control">
+                <a class="page-link pagination-control" href="#!">
+                  <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.49981 12L14.9998 4.5L16.0498 5.55L9.5998 12L16.0498 18.45L14.9998 19.5L7.49981 12Z"
+                        fill="#0E182C" />
+                    </svg>
+
+                  </span>
+                  <span class="pagination-prev">Предыдущий</span></a>
+              </li>
+              <li class="page-item active-item"><a class="page-link" href="#!">1</a></li>
+              <li class="page-item"><a class="page-link" href="#!">2</a></li>
+              <li class="page-item"><a class="page-link" href="#!">3</a></li>
+              <li class="page-item"><a class="page-link" href="#!">4</a></li>
+              <li class="page-item"><a class="page-link" href="#!">...</a></li>
+              <li class="page-item"><a class="page-link" href="#!">18</a></li>
+              <li class="page-control">
+                <a class="page-link pagination-control" href="#!">
+                  <span class="pagination-next">Следующий</span>
+                  <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.2746 12.225L8.77461 19.725L7.72461 18.675L14.1746 12.225L7.72461 5.77495L8.77461 4.72495L16.2746 12.225Z"
+                        fill="#0E182C" />
+                    </svg>
+                  </span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}

@@ -1,0 +1,32 @@
+.empty{
+  &__select-to{
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: contain;
+      width: 58px;
+    }
+  }
+  &__text {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0E182C;
+    opacity: 0.8;
+    max-width: 285px;
+    text-align: center;
+  }
+
+  &__button{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFC105;
+    padding: 15px 30px;
+    border: 1px solid #FFC105;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+}

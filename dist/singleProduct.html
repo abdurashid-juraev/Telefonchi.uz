@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Singleproduct</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/vendor.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/png/logo.png">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="top-block">
+            <div class="container">
+                <div class="nav-top-block">
+                    <ul class="nav-top-left">
+                        <li><a class="nav-top-link" href="shops.html">Магазины</a>
+                        </li>
+                        <li><a class="nav-top-link" href="#!">Рассрочка</a>
+                        </li>
+                        <li><a class="nav-top-link" href="#!">Скидки</a>
+                        </li>
+                        <li><a class="nav-top-link" href="#!">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-top-right">
+                        <li><span class="nav-top-link">Нужен помощь? Позвони нам:</span>  <a class="nav-top-item" href="tel:+998 90 000 00 01">+998 90 000 0001</a>
+                        </li>
+                        <li class="nav-lang lang-icon">
+                            <div class="select-box select-decstop"><a class="select-link active" href="#!">Ру</a>  <span class="select-line"></span>  <a class="select-link" href="#!">Уз</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-search">
+            <div class="container">
+                <div class="nav-search-block relative">
+                    <div class="nav-search-inner">
+                        <div class="logo-wrap-sm">
+                            <div class="select-box select-mob"><a class="select-link active" href="#!">Ру</a>  <span class="select-line"></span>  <a class="select-link" href="#!">Уз</a>
+                            </div>
+                            <a class="logo" href="index.html">
+                                <img src="./images/png/logo.png" alt=":(">
+                            </a>
+                            <button class="burger-btn"><span class="burger-icon"></span>
+                            </button>
+                        </div>
+                        <form action="#" class="nav-search">
+                            <input placeholder="Поиск..." type="text">
+                            <button>
+                                <img alt=":(" src="./images/svg/search.svg">
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="nav-user-right">
+                        <li>
+                            <a class="nav-user-link orange-circle" href="compare.html">
+                                <img src="./images/svg/compare.svg" alt=":("> <span>Сравнивать</span>
+                            </a>
+                        </li>
+                        <li class="currency-dropdown currency-icon" id="currency-dropdown">
+                            <div class="select-box">
+                                <div class="options-container2">
+                                    <div class="option2">
+                                        <input class="radio" type="radio" name="ru" id="currency1">
+                                        <label class="label2" for="currency1">Сум (Уз)</label>
+                                    </div>
+                                    <div class="option2">
+                                        <input class="radio" type="radio" name="uz" id="currency2">
+                                        <label class="label2" for="currency2">Рубль (Ру)</label>
+                                    </div>
+                                    <div class="option2">
+                                        <input class="radio" type="radio" name="en" id="currency3">
+                                        <label class="label2" for="currency3">Долар (США)</label>
+                                    </div>
+                                </div>
+                                <a class="nav-user-link" href="#!">
+                                    <img src="./images/svg/currency.svg" alt=":("> <span class="selected2">Валюта</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-user-link orange-circle" href="basket.html">
+                                <img src="./images/svg/korzina.svg" alt=":("> <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-user-link" href="profile.html">
+                                <img src="./images/svg/user.svg" alt=":("> <span>Профиль</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div>
+                <div class="nav-wrap">
+                    <nav class="nav container">
+                        <ul class="nav-menu">
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#!"><span><svg class="new-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6L2 18C2 19.1046 2.89543 20 4 20L20 20C21.1046 20 22 19.1046 22 18L22 6C22 4.89543 21.1046 4 20 4L4 4C2.89543 4 2 4.89543 2 6Z" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path class="new-svg-text" d="M4 13.9177V10.0823H5.18239V10.7657H5.20755C5.33054 10.5224 5.50943 10.3363 5.74423 10.2075C5.98183 10.0763 6.27114 10.0107 6.61216 10.0107C7.10971 10.0107 7.49406 10.1371 7.7652 10.39C8.03634 10.6428 8.17191 10.9946 8.17191 11.4454V13.9177H6.94759V11.6637C6.94759 11.4109 6.87771 11.2165 6.73795 11.0805C6.59818 10.9445 6.39273 10.8766 6.12159 10.8766C5.85045 10.8766 5.63242 10.9541 5.46751 11.1091C5.30538 11.2642 5.22432 11.4669 5.22432 11.7174V13.9177H4Z" fill="#5D5FEF"/><path class="new-svg-text" d="M10.9644 10.7728C10.6988 10.7728 10.4766 10.8503 10.2977 11.0054C10.1216 11.1604 10.0224 11.3584 10 11.5993H11.9078C11.8938 11.3536 11.8001 11.1544 11.6268 11.0018C11.4563 10.8491 11.2355 10.7728 10.9644 10.7728ZM11.9245 12.7442H13.0482C12.9811 13.121 12.7603 13.4252 12.3857 13.6565C12.014 13.8855 11.5514 14 10.9979 14C10.3075 14 9.7652 13.8235 9.37107 13.4705C8.97973 13.1175 8.78407 12.6333 8.78407 12.0179C8.78407 11.4049 8.97973 10.9159 9.37107 10.551C9.7624 10.1837 10.2893 10 10.9518 10C11.6031 10 12.1216 10.1741 12.5073 10.5224C12.8931 10.8706 13.086 11.3369 13.086 11.9213V12.2397H9.98742V12.3041C9.98742 12.5784 10.0811 12.8014 10.2683 12.9732C10.4584 13.1425 10.7086 13.2272 11.0189 13.2272C11.2425 13.2272 11.4354 13.1843 11.5975 13.0984C11.7596 13.0101 11.8686 12.8921 11.9245 12.7442Z" fill="#5D5FEF"/><path class="new-svg-text" d="M20 10.0823L18.8092 13.9177H17.5052L16.6918 11.2057H16.6667L15.8574 13.9177H14.5702L13.3753 10.0823H14.608L15.2872 12.9267H15.3124L16.109 10.0823H17.283L18.0839 12.9267H18.109L18.7925 10.0823H20Z" fill="#5D5FEF"/></svg></span><h4>Новинки</h4></a>
+                                <ul
+                                class="nav-megamenu">
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Телефоны 1</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Наушники</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Планшеты</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Калонки</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Стабилизаторы</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                            <li class="nav-submenu-item">
+                                                <a href="#!"></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Фотоаппараты</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Телевизоры</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="nav-submenu-title" href="#!"><h4>Проекторы</h4></a>
+                                        <ul class="nav-submenu">
+                                            <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                            </li>
+                                            <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                        </li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#!"><span><svg class="smartphone-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path class="smartphone-dot" d="M12 18H12.01" stroke="#5D5FEF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h4>Телефоны и гаджеты</h4></a>
+                            <ul
+                            class="nav-megamenu">
+                                <li><a class="nav-submenu-title" href="#!">Телефоны 2</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Наушники</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Планшеты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Калонки</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Стабилизаторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Фотоаппараты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Телевизоры</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Проекторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#!"><span><svg class="home-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></span><h4>Техника для дома</h4></a>
+                            <ul
+                            class="nav-megamenu">
+                                <li><a class="nav-submenu-title" href="#!">Телефоны 3</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Наушники</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Планшеты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Калонки</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Стабилизаторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Фотоаппараты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Телевизоры</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Проекторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#!"><span><svg class="monitor-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 3H4C2.89543 3 2 3.89543 2 5V15C2 16.1046 2.89543 17 4 17H20C21.1046 17 22 16.1046 22 15V5C22 3.89543 21.1046 3 20 3Z" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M8 21H16" stroke="#5D5FEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17V21" stroke="#5D5FEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h4>Компютеры</h4></a>
+                            <ul
+                            class="nav-megamenu">
+                                <li><a class="nav-submenu-title" href="#!">Телефоны 4</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Наушники</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Планшеты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Калонки</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Стабилизаторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Фотоаппараты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Телевизоры</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Проекторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#!"><span><svg class="aksesuar-svg-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path class="path" fill="none" d="M21 19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H18C17.4696 21 16.9609 20.7893 16.5858 20.4142C16.2107 20.0391 16 19.5304 16 19V16C16 15.4696 16.2107 14.9609 16.5858 14.5858C16.9609 14.2107 17.4696 14 18 14H21V19ZM3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H6C6.53043 21 7.03914 20.7893 7.41421 20.4142C7.78929 20.0391 8 19.5304 8 19V16C8 15.4696 7.78929 14.9609 7.41421 14.5858C7.03914 14.2107 6.53043 14 6 14H3V19Z" stroke="#5D5FEF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span><h4>Аксессуары</h4></a>
+                            <ul
+                            class="nav-megamenu">
+                                <li><a class="nav-submenu-title" href="#!">Телефоны 5</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Наушники</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Планшеты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Калонки</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Стабилизаторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Фотоаппараты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Телевизоры</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Проекторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                </ul>
+                        </li>
+                        <li class="nav-menu-item"><a class="nav-menu-link bg-svg" href="#!"><span></span><h4>Гигиенические товары</h4></a>
+                            <ul class="nav-megamenu">
+                                <li><a class="nav-submenu-title" href="#!">Телефоны 6</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Смартфоны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кнопычные</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Наушники</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Беспроводные наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Наушники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Битсы</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Планшеты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Все товары</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Планшеты с клавятурой</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Калонки</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Самбуфер</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные калонки</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Стабилизаторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Функциональная</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Штативная</a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                        <li class="nav-submenu-item">
+                                            <a href="#!"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Фотоаппараты</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Зеркальные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ультразум-фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Компактные фотоаппараты</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Видеокамеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Экшн камеры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Цифровые фоторамки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Телевизоры</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Smart телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Ultra HD (4K) телевизоры</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Антенны</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кабели и переходники</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-submenu-title" href="#!">Проекторы</a>
+                                    <ul class="nav-submenu">
+                                        <li class="nav-submenu-item"><a href="#!">Для домашнего кинотеатра</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Лазерные</a>
+                                        </li>
+                                        <li class="nav-submenu-item"><a href="#!">Кронштейны</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="p-30-0">
+                <div class="container">
+                    <div class="product-info-text2">
+                        <div class="product-tab1-title">Техника для дома</div>
+                        <h3 class="product-item-title">Утюг RUSSELL HOBBS SUPREME STEAM PRO 23971-56 (бирюзовый)</h3>
+                        <p class="product-item-text">Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную глажку и отличный результат. Высокая мощность утюга Aurora ART-SI-815S Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную глажку и отличный результат.
+                            Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную глажку и отличный результат.</p>
+                    </div>
+                    <div class="product-top">
+                        <form action="" class="product-order-item">
+                            <button class="product-order-btn" type="button"><span class="product-top-icon"><svg class="comp-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.75 18.75V11.8711L1.06058 14.5606L0 13.5L4.5 9L9 13.5L7.93943 14.5606L5.25 11.8711V18.75H14.25V20.25H5.25C4.85232 20.2495 4.47107 20.0913 4.18987 19.8101C3.90866 19.5289 3.75048 19.1477 3.75 18.75Z" fill="#5D5FEF"/><path d="M18 16.5H21C21.3977 16.5004 21.779 16.6586 22.0602 16.9398C22.3414 17.221 22.4996 17.6023 22.5 18V21C22.4996 21.3977 22.3414 21.779 22.0602 22.0602C21.779 22.3414 21.3977 22.4996 21 22.5H18C17.6023 22.4996 17.221 22.3414 16.9398 22.0602C16.6586 21.779 16.5004 21.3977 16.5 21V18C16.5004 17.6023 16.6586 17.221 16.9398 16.9398C17.221 16.6586 17.6023 16.5004 18 16.5ZM21 21V18H17.9989L18 21H21Z" fill="#5D5FEF"/><path d="M20.25 4.5V11.3789L22.9394 8.68943L24 9.75L19.5 14.25L15 9.75L16.0606 8.68943L18.75 11.3789V4.5H9.75V3H18.75C19.1477 3.00048 19.5289 3.15866 19.8101 3.43987C20.0913 3.72107 20.2495 4.10232 20.25 4.5Z" fill="#5D5FEF"/><path d="M6 4.5H1.5V6H6V4.5Z" fill="#5D5FEF"/><path d="M7.5 1.5H1.5V3H7.5V1.5Z" fill="#5D5FEF"/></svg> </span>
+                                <span
+                                class="order-btn-text">Сравнивать</span>
+                            </button>
+                        </form>
+                        <form action="" class="product-order-item">
+                            <button class="product-order-btn" type="button"><span class="product-top-icon"><svg class="save-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_209_2691)"><path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z" stroke="#5D5FEF" stroke-width="1.8"/></g><defs><clipPath id="clip0_209_2691"><rect width="24" height="24" fill="white"/></clipPath></defs></svg> </span>
+                                <span
+                                class="order-btn-text">Сохранить</span>
+                            </button>
+                        </form>
+                        <div class="product-order-btn product-order-item share-info"><span class="product-top-icon"><svg class="comp-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.2503 15C16.6889 15.0028 16.1353 15.1316 15.6303 15.377C15.1254 15.6223 14.6819 15.9779 14.3328 16.4175L8.85026 12.99C9.05008 12.3451 9.05007 11.6548 8.85026 11.01L14.3328 7.58247C14.8892 8.2715 15.6716 8.74135 16.5413 8.90877C17.411 9.0762 18.3119 8.93039 19.0844 8.49719C19.8569 8.06398 20.4511 7.37134 20.7618 6.54195C21.0726 5.71257 21.0797 4.79998 20.782 3.96584C20.4843 3.1317 19.9009 2.42986 19.1353 1.98464C18.3696 1.53942 17.4711 1.37955 16.5989 1.53337C15.7267 1.68718 14.9371 2.14475 14.3699 2.82501C13.8028 3.50527 13.4947 4.36431 13.5003 5.24997C13.5038 5.58535 13.5543 5.91859 13.6503 6.23997L8.16776 9.66747C7.68375 9.05816 7.02217 8.61451 6.27473 8.39802C5.52729 8.18153 4.73101 8.20292 3.99627 8.45923C3.26153 8.71554 2.62473 9.19407 2.17413 9.8285C1.72353 10.4629 1.48145 11.2218 1.48145 12C1.48145 12.7781 1.72353 13.537 2.17413 14.1714C2.62473 14.8059 3.26153 15.2844 3.99627 15.5407C4.73101 15.797 5.52729 15.8184 6.27473 15.6019C7.02217 15.3854 7.68375 14.9418 8.16776 14.3325L13.6503 17.76C13.5543 18.0813 13.5038 18.4146 13.5003 18.75C13.5003 19.4916 13.7202 20.2167 14.1323 20.8334C14.5443 21.45 15.13 21.9307 15.8152 22.2145C16.5004 22.4983 17.2544 22.5726 17.9819 22.4279C18.7093 22.2832 19.3775 21.9261 19.9019 21.4016C20.4264 20.8772 20.7835 20.209 20.9282 19.4816C21.0729 18.7541 20.9986 18.0001 20.7148 17.3149C20.431 16.6297 19.9503 16.044 19.3337 15.632C18.717 15.2199 17.9919 15 17.2503 15ZM17.2503 2.99997C17.6953 2.99997 18.1303 3.13193 18.5003 3.37916C18.8703 3.62639 19.1587 3.9778 19.329 4.38893C19.4993 4.80006 19.5438 5.25246 19.457 5.68892C19.3702 6.12538 19.1559 6.52629 18.8413 6.84096C18.5266 7.15563 18.1257 7.36992 17.6892 7.45673C17.2528 7.54355 16.8004 7.49899 16.3892 7.3287C15.9781 7.1584 15.6267 6.87001 15.3795 6.5C15.1322 6.12999 15.0003 5.69498 15.0003 5.24997C15.0003 4.65323 15.2373 4.08093 15.6593 3.65898C16.0812 3.23702 16.6535 2.99997 17.2503 2.99997ZM5.25026 14.25C4.80525 14.25 4.37024 14.118 4.00023 13.8708C3.63022 13.6235 3.34183 13.2721 3.17153 12.861C3.00124 12.4499 2.95668 11.9975 3.0435 11.561C3.13031 11.1246 3.3446 10.7236 3.65927 10.409C3.97394 10.0943 4.37485 9.88002 4.81131 9.7932C5.24777 9.70639 5.70017 9.75094 6.1113 9.92124C6.52243 10.0915 6.87384 10.3799 7.12107 10.7499C7.3683 11.1199 7.50026 11.555 7.50026 12C7.50026 12.5967 7.26321 13.169 6.84125 13.591C6.4193 14.0129 5.847 14.25 5.25026 14.25ZM17.2503 21C16.8053 21 16.3702 20.868 16.0002 20.6208C15.6302 20.3735 15.3418 20.0221 15.1715 19.611C15.0012 19.1999 14.9567 18.7475 15.0435 18.311C15.1303 17.8746 15.3446 17.4736 15.6593 17.159C15.9739 16.8443 16.3749 16.63 16.8113 16.5432C17.2478 16.4564 17.7002 16.5009 18.1113 16.6712C18.5224 16.8415 18.8738 17.1299 19.1211 17.4999C19.3683 17.8699 19.5003 18.305 19.5003 18.75C19.5003 19.3467 19.2632 19.919 18.8413 20.341C18.4193 20.7629 17.847 21 17.2503 21Z" fill="#5D5FEF"/></svg> </span>
+                            <span
+                            class="order-btn-text">Поделиться</span>
+                                <ul class="share-menu">
+                                    <li>
+                                        <button class="share-menu-link"><span><img src="./images/svg/copy-icon.svg" alt=":("></span><span class="copyL">Копировать ссылку</span>
+                                        </button>
+                                    </li>
+                                    <li><a class="share-menu-link" href="https://t.me/share/url?url=http://localhost:9000/singleProduct.html"><span><img src="./images/svg/telegram-share.svg" alt=":("></span><span>Telegram</span></a>
+                                    </li>
+                                    <li><a class="share-menu-link" href="https://www.instagram.com/"><span><img src="./images/svg/instagram-share.svg" alt=":("></span><span>Instagram</span></a>
+                                    </li>
+                                    <li><a class="share-menu-link" href="https://www.facebook.com/"><span><img src="./images/svg/facebook-share.svg" alt=":("></span><span>Facebook</span></a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="product-row">
+                                <div class="product-col6">
+                                    <div>
+                                        <div class="product-info">
+                                            <div class="product-info-text">
+                                                <div class="product-tab1-title">Техника для дома</div>
+                                                <h3 class="product-item-title">Утюг RUSSELL HOBBS SUPREME STEAM PRO 23971-56 (бирюзовый)</h3>
+                                                <p class="product-item-text">Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную глажку и отличный результат. Высокая мощность утюга Aurora ART-SI-815S Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную
+                                                    глажку и отличный результат. Высокая мощность утюга Aurora ART-SI-815S обеспечивает эффективную глажку и отличный результат.</p>
+                                            </div>
+                                        </div>
+                                        <ul class="product-imgs-wrap">
+                                            <li class="product-tab1-img tab-active">
+                                                <img src="./images/png/app.png" alt=":(">
+                                            </li>
+                                            <li class="product-tab1-img">
+                                                <img src="./images/png/galaxy-s21.png" alt=":(">
+                                            </li>
+                                            <li class="product-tab1-img">
+                                                <img src="./images/png/photo_camera.png" alt=":(">
+                                            </li>
+                                            <li class="product-tab1-img">
+                                                <img src="./images/png/headphones-clip.png" alt=":(">
+                                            </li>
+                                            <li class="product-tab1-img">
+                                                <img src="./images/png/headphones-clip.png" alt=":(">
+                                            </li>
+                                            <li class="product-tab1-img">
+                                                <img src="./images/png/headphones-clip.png" alt=":(">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-col6">
+                                    <ul class="product-main-img-wrap">
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content tab-active">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/app.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/galaxy-s21.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/photo_camera.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/headphones-clip.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/headphones-clip.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="product-main-img">
+                                            <div class="product-main-img-content">
+                                                <div class="img-product-container" data-scale="3"><span class="img-product"><img src="./images/png/photo_camera.png" alt=":("></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <form action="#" class="form-element">
+                                <div class="product-block-wrap">
+                                    <ul class="product-block-info">
+                                        <li class="product-info-item">
+                                            <div class="product-brand-item">Бренд</div>
+                                            <div class="product-brand-name">AURORA</div>
+                                        </li>
+                                        <li class="product-info-item">
+                                            <div class="product-brand-item">В наличии</div>
+                                            <div class="product-brand-name"><span>31 </span>шт</div>
+                                        </li>
+                                        <li class="product-info-item">
+                                            <div class="product-brand-item">Мошность</div>
+                                            <div class="product-brand-name"><span>2500 </span>Vt</div>
+                                        </li>
+                                        <li class="product-info-item">
+                                            <div class="product-brand-item">Цена</div>
+                                            <div class="product-brand-name product-item-price"><span>1 800 000 </span>сум</div>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="product-order-block">
+                                            <div class="circle-radio-wrapper">
+                                                <label class="circle-radio">
+                                                    <input type="radio" name="colors" data-color="blue" hidden> <span class="color-border"><span class="color-bg"></span></span>
+                                                </label>
+                                                <label class="circle-radio">
+                                                    <input type="radio" name="colors" data-color="red" hidden> <span class="color-border"><span class="color-bg"></span></span>
+                                                </label>
+                                                <label class="circle-radio">
+                                                    <input type="radio" name="colors" data-color="black" hidden> <span class="color-border"><span class="color-bg"></span></span>
+                                                </label>
+                                                <label class="circle-radio">
+                                                    <input type="radio" name="colors" data-color="green" hidden> <span class="color-border"><span class="color-bg"></span></span>
+                                                </label>
+                                            </div>
+                                            <div class="product-counter-btns">
+                                                <button class="btn-min">
+                                                    <img src="./images/svg/minus.svg" alt=":(">
+                                                </button>
+                                                <input class="count-num" type="text" value="1">
+                                                <button class="btn-max">
+                                                    <img src="./images/svg/plus.svg" alt=":(">
+                                                </button>
+                                            </div>
+                                            <div class="product-sm-title">Цвета</div>
+                                        </li>
+                                        <li class="product-view">
+                                            <label class="memory" for="r1">
+                                                <input type="radio" name="memory" id="r1" hidden>
+                                                <div class="memory-active">
+                                                    <div><span>128</span>Gb</div>
+                                                </div>
+                                            </label>
+                                            <label class="memory" for="r2">
+                                                <input type="radio" name="memory" id="r2" hidden>
+                                                <div class="memory-active">
+                                                    <div><span>256</span>Gb</div>
+                                                </div>
+                                            </label>
+                                            <label class="memory" for="r3">
+                                                <input type="radio" name="memory" id="r3" hidden>
+                                                <div class="memory-active">
+                                                    <div><span>512</span>Gb</div>
+                                                </div>
+                                            </label>
+                                            <label class="memory" for="r4">
+                                                <input type="radio" name="memory" id="r4" hidden>
+                                                <div class="memory-active">
+                                                    <div><span>1</span>Tb</div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="block-center">
+                                    <button class="main-btn popup-open" type="button"><span>Купить рассрочку</span>  <span class="btn-icon-circle"><img src="./images/svg/null.svg" alt=":("></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="product-tab-block">
+                        <div class="single-tab">
+                            <div class="single-tabs-wrap">
+                                <ul class="single-tabs">
+                                    <li class="single-tabs__link">
+                                        <div class="single-tabs__link__text">Описание</div>
+                                    </li>
+                                    <li class="single-tabs__link tab-active">
+                                        <div class="single-tabs__link__text">Характеристика</div>
+                                    </li>
+                                    <li class="single-tabs__link">
+                                        <div class="single-tabs__link__text">Отзывы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="single-tabs__contents">
+                                <li>
+                                    <div class="single-tabs__content">
+                                        <div class="descrip-block">
+                                            <p>Высокая мощность утюга Artel ART-SI-815S обеспечивает эффективную глажку и</p>
+                                            <p>отличный результат. К тому же, паровой удар мощностью 90 г/мин поможет при разглаживании складок на деликатных тканях, а регулировка подачи пара удобна при глажении разных типов тканей. Для безопасности</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam ipsam ea vel, facilis cumque nobis? Excepturi debitis sunt tenetur quas eligendi? Porro officia cumque nostrum nam, quis quam itaque.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-tabs__content relative tab-active">
+                                        <div class="tab-describ-wrap">
+                                            <div class="tab-descrip-block">
+                                                <ul class="product-info-block">
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Бренд</div>
+                                                        <div class="product-brand-name">AURORA</div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Страна производителья</div>
+                                                        <div class="product-brand-name">Германия</div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Паровой удар</div>
+                                                        <div class="product-brand-name"><span>150</span>  <span>г/мин</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Размер д/ш</div>
+                                                        <div class="product-brand-name"><span>25/12 </span><span>см</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-descrip-block">
+                                                <ul class="product-info-block">
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Бренд</div>
+                                                        <div class="product-brand-name">AURORA</div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Страна производителья</div>
+                                                        <div class="product-brand-name">Германия</div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Паровой удар</div>
+                                                        <div class="product-brand-name"><span>150</span>  <span>г/мин</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Размер д/ш</div>
+                                                        <div class="product-brand-name"><span>25/12 </span><span>см</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-descrip-block">
+                                                <ul class="product-info-block">
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Объем резервуара для воды</div>
+                                                        <div class="product-brand-name"><span>400</span>  <span>мл</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="product-info-item">
+                                                        <div class="product-brand-item">Функция разбрызгивания</div>
+                                                        <div class="product-brand-name">Есть</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="show-content"><a href="#!" class="main-btn main-btn-w"><span>Читать дальше</span><span class="btn-icon-circle"><img src="./images/svg/down-20w.svg" alt=":("></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-tabs__content">
+                                        <div class="row">
+                                            <div class="col-xl-5">
+                                                <form action="">
+                                                    <div class="product-textarea">
+                                                        <textarea name="test" placeholder="Напишите свои отзыви"></textarea>
+                                                    </div>
+                                                    <div class="tab-form-rank">
+                                                        <div class="rating-box">
+                                                            <div class="rating-container">
+                                                                <input type="radio" name="rating" value="5" id="star-5">
+                                                                <label for="star-5">&#9733;</label>
+                                                                <input type="radio" name="rating" value="4" id="star-4">
+                                                                <label for="star-4">&#9733;</label>
+                                                                <input type="radio" name="rating" value="3" id="star-3">
+                                                                <label for="star-3">&#9733;</label>
+                                                                <input type="radio" name="rating" value="2" id="star-2">
+                                                                <label for="star-2">&#9733;</label>
+                                                                <input type="radio" name="rating" value="1" id="star-1">
+                                                                <label for="star-1">&#9733;</label>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="tab-btn-send">
+                                                            <img src="./images/svg/sendOrenge.svg" alt=":(">
+                                                        </button>
+                                                    </div>
+                                                    <div class="typing-comment">
+                                                        <div>
+                                                            <div class="typing-comment-title">Штобы написать отзыв вы должны зарегистрированым</div>
+                                                            <div class="typing-comment-btn">
+                                                                <div><a href="signUp.html" class="main-btn single-btn"><span>Регистрироваться</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-xl-7">
+                                                <div class="height-400">
+                                                    <ul class="product-client-block">
+                                                        <li class="product-client-item">
+                                                            <div class="product-client-rew"><span class="product-client-name">User name</span><span class="usr-review__wrap"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 32"><g><path class="star-empty" d="M145.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6h-10.6l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6 l-3.5,10H115c-0.5,0-0.8,0.2-0.9,0.6c0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L119.8,30c0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L130,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C146,12.9,146.1,12.5,145.9,12.1L145.9,12.1z"/><path class="star-empty" d="M107.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H96.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H77c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L81.8,30c0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L92,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C108,12.9,108.1,12.5,107.9,12.1L107.9,12.1z"/><path class="star-empty" d="M69.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H58.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H39c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L43.8,30c0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L54,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C70,12.9,70.1,12.5,69.9,12.1L69.9,12.1z"/><path class="star-empty" d="M31.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H20.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H1c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L5.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L16,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C32,12.9,32.1,12.5,31.9,12.1L31.9,12.1z"/><path class="star-empty" d="M183.9,12.1L183.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6h-10.6l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H153c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L157.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L168,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C184,12.9,184.1,12.5,183.9,12.1z"/></g><clipPath id="star-filled"><path class="star-filled" d="M145.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6h-10.6l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H115c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L119.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L130,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C146,12.9,146.1,12.5,145.9,12.1L145.9,12.1z"/><path class="star-filled" d="M107.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H96.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H77c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L81.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L92,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C108,12.9,108.1,12.5,107.9,12.1L107.9,12.1z"/><path class="star-filled" d="M69.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H58.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H39c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L43.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L54,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C70,12.9,70.1,12.5,69.9,12.1L69.9,12.1z"/><path class="star-filled" d="M31.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6H20.4l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H1c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L5.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L16,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C32,12.9,32.1,12.5,31.9,12.1L31.9,12.1z"/><path class="star-filled" d="M183.9,12.1L183.9,12.1c-0.1-0.4-0.5-0.6-0.9-0.6h-10.6l-3.5-10c-0.1-0.4-0.5-0.6-0.9-0.6c-0.5,0-0.8,0.2-0.9,0.6l-3.5,10H153c-0.5,0-0.8,0.2-0.9,0.6c-0.1,0.5,0,0.8,0.3,1.1l8.5,6.7L157.8,30c-0.1,0.4,0,0.8,0.3,1.1c0.4,0.2,0.8,0.3,1.2,0L168,25l8.7,6.1c0.2,0.1,0.4,0.2,0.6,0.2c0.5,0,1-0.4,1-1c0-0.1,0-0.2-0.1-0.4l-3.1-10.1l8.5-6.7C184,12.9,184.1,12.5,183.9,12.1z"/></clipPath><rect class="rect-filled js-star-filling" x="0" width="0" height="32" clip-path="url(#star-filled)"/></svg> <input class="usr-review__range js-star-rating" type="range" min="0" max="5"></span>
+                                                            </div>
+                                                            <p class="tab-text">Высокая мощность утюга Artel ART-SI-815S обеспечивает эффективную глажку и Высокая мощность утюга Artel ART-SI-815S обеспечивает эффективную глажку и Высокая мощность утюга Artel ART-SI-815S
+                                                                обеспечивает эффективную глажку и Высокая мощность утюга Artel ART-SI-815S обеспечивает эффективную глажку и отличный результат.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-slider">
+                        <div class="title-content">
+                            <h2>Сортировано для вас</h2>
+                        </div>
+                        <div class="swiper2-wrap">
+                            <div class="swiper" id="swiper5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <article class="card-wrap">
+                                            <a href="#!" class="card-category">
+                                                <div class="card-category-thumb">
+                                                    <div class="card-category-img">
+                                                        <img src="./images/png/tel1.png" alt=":(">
+                                                    </div>
+                                                </div>
+                                                <div class="card-category-info">
+                                                    <div>
+                                                        <div class="card-category-name">Телефон</div>
+                                                        <div class="card-category-model">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ...</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-price-block">
+                                                <div class="card-price-inner">
+                                                    <div class="price">
+                                                        <div class="card-price-discount">9 000 000 сум</div>
+                                                        <div class="card-item-price"><span>7 999 000 </span><span>сум</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="card-shopping-icon">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.25 18.75C6.94036 18.75 7.5 18.1904 7.5 17.5C7.5 16.8096 6.94036 16.25 6.25 16.25C5.55964 16.25 5 16.8096 5 17.5C5 18.1904 5.55964 18.75 6.25 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M15 18.75C15.6904 18.75 16.25 18.1904 16.25 17.5C16.25 16.8096 15.6904 16.25 15 16.25C14.3096 16.25 13.75 16.8096 13.75 17.5C13.75 18.1904 14.3096 18.75 15 18.75Z" fill="#5D5FEF" />
+                                                            <path d="M17.5 4.37501H3.6375L3.125 1.75001C3.09578 1.60671 3.01724 1.47819 2.90304 1.38683C2.78884 1.29548 2.64622 1.24706 2.5 1.25001H0V2.50001H1.9875L4.375 14.5C4.40422 14.6433 4.48276 14.7718 4.59696 14.8632C4.71116 14.9545 4.85378 15.003 5 15H16.25V13.75H5.5125L5 11.25H16.25C16.3945 11.2535 16.5357 11.2069 16.6497 11.118C16.7636 11.0291 16.8432 10.9035 16.875 10.7625L18.125 5.13751C18.1459 5.04477 18.1455 4.94848 18.1236 4.85596C18.1017 4.76344 18.059 4.67714 17.9987 4.60361C17.9385 4.53009 17.8622 4.47128 17.7758 4.43166C17.6894 4.39205 17.595 4.37267 17.5 4.37501ZM15.75 10H4.7625L3.8875 5.62501H16.7188L15.75 10Z"
+                                                            fill="#5D5FEF" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="card-order-btn"><span>Добавлено</span><span><img src="./images/svg/checkmarked.svg" alt=":("></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="card-like-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_209_2691)">
+                                                        <path d="M4 22.5V23.3129L4.72553 22.9462L12 19.2699L19.2745 22.9462L20 23.3129V22.5V3C20 2.46957 19.7893 1.96086 19.4142 1.58579C19.0391 1.21071 18.5304 1 18 1H6C5.46957 1 4.96086 1.21071 4.58579 1.58579C4.21071 1.96086 4 2.46957 4 3V22.5Z"
+                                                        stroke="#5D5FEF" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_209_2691">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next next5"><span><img class="svg-blue" src="./images/svg/right.svg" alt=":("> <img class="svg-white" src="./images/svg/right-w24.svg" alt=":("></span>
+                            </div>
+                            <div class="swiper-button-prev prev5"><span><img class="svg-blue" src="./images/svg/left.svg" alt=":("> <img class="svg-white" src="./images/svg/left-w24.svg" alt=":("></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="popup-wrapper">
+                <div class="popup">
+                    <form class="popup-form">
+                        <h3 class="popup-form__title">Купить в рассрочку</h3>
+                        <div class="popup-inner">
+                            <div class="pay-tab">
+                                <ul class="pay-tabs">
+                                    <li class="pay-tabs__link">
+                                        <label class="payment-pay_link">
+                                            <input type="radio" name="isPay" hidden checked="checked">
+                                            <div class="payment-pay_info">
+                                                <img class="img-gr" src="./images/png/iman-gr.png" alt=":(">
+                                                <img class="img-w" src="./images/png/iman-w.png" alt=":("> <span>Iman Invest</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="pay-tabs__link pay-active">
+                                        <label class="payment-pay_link">
+                                            <input type="radio" name="isPay" hidden>
+                                            <div class="payment-pay_info">
+                                                <img class="img-gr" src="./images/png/paymart20.png" alt=":(">
+                                                <img class="img-w" src="./images/png/paymart-w.png" alt=":("> <span>Paymart</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="pay-tabs__link">
+                                        <label class="payment-pay_link">
+                                            <input type="radio" name="isPay" hidden>
+                                            <div class="payment-pay_info">
+                                                <img class="img-gr" src="./images/png/Alif logo20.png" alt=":(">
+                                                <img class="img-w" src="./images/png/Alif-w.png" alt=":("> <span>Alif</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="pay-tabs__contents">
+                                    <li>
+                                        <div class="pay-tabs__content pay-active">
+                                            <ul class="payment-date-wrap">
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m6">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m6" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">6</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pay-tabs__content">
+                                            <ul class="payment-date-wrap">
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3" class="payment-date-item">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3" class="payment-date-item">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m6" class="payment-date-item">
+                                                        <input class="pay-modal-radio" type="radio" checked="true" name="month" id="m6" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">6</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m9" class="payment-date-item">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m9" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">9</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pay-tabs__content">
+                                            <ul class="payment-date-wrap">
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m3">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m3" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">3</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m6">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m6" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">6</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m9">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m9" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">9</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                                <li class="payment-date-item">
+                                                    <label class="pay-modal-label" for="m12">
+                                                        <input class="pay-modal-radio" type="radio" name="month" id="m12" hidden> <span class="label-bg"></span>
+                                                        <div class="payment-date-num">12</div>
+                                                        <div class="payment-date-mon">Месяц</div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-payment-block">
+                            <ul class="product-info-block">
+                                <li class="product-info-item">
+                                    <div class="product-brand-item">Продукт</div>
+                                    <div class="product-brand-name">Samsung Galaxy A20</div>
+                                </li>
+                                <li class="product-info-item">
+                                    <div class="product-brand-item">Первоначальный взнос</div>
+                                    <div class="product-brand-name"><span>-</span> сум</div>
+                                </li>
+                                <li class="product-info-item">
+                                    <div class="product-brand-item">Срок рассрочки</div>
+                                    <div class="product-brand-name">-</div>
+                                </li>
+                                <li class="product-info-item">
+                                    <div class="product-brand-item">Ежемесячный платёж</div>
+                                    <div class="product-brand-name"><span>-</span> сум</div>
+                                </li>
+                                <li class="product-info-item">
+                                    <div class="product-brand-name product-item-price">Обшая сумма оплаты</div>
+                                    <div class="product-brand-name product-item-price"><span>- </span><span>сум</span>
+                                    </div>
+                                </li>
+                                <li class="basket-product-btns"><a href="paymentSingle.html" class="main-btn"><span>Оформить заказ</span> <span class="btn-icon-circle"><img src="./images/svg/null.svg" alt=":("></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close-btn">
+                    <img src="./images/svg/close-b.svg" alt=":(">
+                </button>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-nav-wrap">
+                    <nav>
+                        <ul class="footer-nav">
+                            <li><a href="#!" class="footer-primary-title">Покупателям</a>
+                                <ul>
+                                    <li><a class="footer-nav-link" href="#!">Как сделать заказ</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Рассрочка</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Возврат</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Обратная связь</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Гарантия</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Возврат</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Обратная связь</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#!" class="footer-primary-title">Информация</a>
+                                <ul>
+                                    <li><a class="footer-nav-link" href="#!">Публичная оферта</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Оплатить онлайн</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Виды доставки</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Корпоративным клиентам</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#!" class="footer-primary-title">Пресс-центр</a>
+                                <ul>
+                                    <li><a class="footer-nav-link" href="#!">История</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Миссия и ценности</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Бесплатная доставка</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Пресс-релизы</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">СМИ о нас</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Контакты для прессы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#!" class="footer-primary-title">О нас</a>
+                                <ul>
+                                    <li><a class="footer-nav-link" href="#!">О компании</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Вакансия</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="shops.html">Магазины</a>
+                                    </li>
+                                    <li><a class="footer-nav-link" href="#!">Руководство</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-social-block">
+                        <div class="footer-cop">© 2022 Telefonchi.uz. Tashkent, Uzbekistan</div>
+                        <div class="footer-social-inner">
+                            <ul class="footer-social-menu">
+                                <li>
+                                    <a href="#!">
+                                        <img src="./images/svg/twitter.svg" alt=":(">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <img src="./images/svg/linkedin.svg" alt=":(">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <img src="./images/svg/facebook.svg" alt=":(">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <img src="./images/svg/instagram.svg" alt=":(">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div>
+                                <img src="./images/svg/rteco.svg" alt=":(">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <h5 class="footer-primary-title">Не только покупать, но и продавать</h5>
+                                <p class="footer-text">Локальные продавцы в странах, где уже доступен ZoodMall, могут построить свой бизнес B2C e-commerce, используя возможности торговой площадки. Размещая товары с качественным описанием и фото, вы получите доступ к более 225
+                                    млн потенциальных клиентов. Описания продукции автоматически переводятся на 8 языков. Комиссия сервиса составляет от 2 до 15 %. Также всегда доступна поддержка</p>
+                            </div>
+                            <div class="col-xl-6">
+                                <h5 class="footer-primary-title">Как оплачивать заказ и куда его доставляют?</h5>
+                                <p class="footer-text">Купив понравившейся товар на ZoodMall, вы можете воспользоваться услугой беспроцентной рассрочки «Купи сейчас — плати потом». Система ZoodPay позволяет оплачивать продукцию 4 или 6 равными платежами. Вы будете заранее получать
+                                    уведомления, чтобы не забыть внести нужную сумму. Рассрочку можно брать в национальной валюте, стоимость товара фиксируется в момент покупки и не изменяется в дальнейшем.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/vendor.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+{% set title = "basket" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+{% include "components/header.html" %}
+<main>
+  <section class="p-50-0">
+    <div class="container">
+      <div class="title-content">
+        <h2>В корзине 2 товаров</h2>
+      </div>
+      <div class="basket-block">
+        <form action="#" class="row">
+          <div class="col-xl-8">
+            <ul>
+              <li class="basket-item-block">
+                <div class="basket-item">
+                  <div>
+                    <div class="basket-item-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="basket-item-inner">
+                    <div class="basket-model-name">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ... </div>
+                    <div class="product-counter-btns">
+                      <button class="btn-min"><img src="./images/svg/minus.svg" alt=":("></button>
+                      <input class="count-num" type="text" value="1" />
+                      <button class="btn-max"><img src="./images/svg/plus.svg" alt=":("></button>
+                    </div>
+                    <div class="basket-price-block">
+                      <div class="product-item-price"><span class="">100 000 000 </span>сум</div>
+                      <button class="backet-icon">
+                        <img class="close-blue" src="./images/svg/closeX.svg" alt=":(">
+                        <img class="close-red" src="./images/svg/closeX-red.svg" alt=":(">
+                        <img class="close-sm" src="./images/svg/trash.svg" alt=":(">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-item-block">
+                <div class="basket-item">
+                  <div>
+                    <div class="basket-item-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="basket-item-inner">
+                    <div class="basket-model-name">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ... </div>
+                    <div class="product-counter-btns">
+                      <button class="btn-min"><img src="./images/svg/minus.svg" alt=":("></button>
+                      <input class="count-num" type="text" value="1" />
+                      <button class="btn-max"><img src="./images/svg/plus.svg" alt=":("></button>
+                    </div>
+                    <div class="basket-price-block">
+                      <div class="product-item-price"><span class="">100 000 000 </span>сум</div>
+                      <button class="backet-icon">
+                        <img class="close-blue" src="./images/svg/closeX.svg" alt=":(">
+                        <img class="close-red" src="./images/svg/closeX-red.svg" alt=":(">
+                        <img class="close-sm" src="./images/svg/trash.svg" alt=":(">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="basket-item-block">
+                <div class="basket-item">
+                  <div>
+                    <div class="basket-item-img"><img src="./images/png/tel1.png" alt=":("></div>
+                  </div>
+                  <div class="basket-item-inner">
+                    <div class="basket-model-name">Смартфон Samsung Galaxy S21 Ultra 5G 12/256GB (чер ... </div>
+                    <div class="product-counter-btns">
+                      <button class="btn-min"><img src="./images/svg/minus.svg" alt=":("></button>
+                      <input class="count-num" type="text" value="1" />
+                      <button class="btn-max"><img src="./images/svg/plus.svg" alt=":("></button>
+                    </div>
+                    <div class="basket-price-block">
+                      <div class="product-item-price"><span class="">100 000 000 </span>сум</div>
+                      <button class="backet-icon">
+                        <img class="close-blue" src="./images/svg/closeX.svg" alt=":(">
+                        <img class="close-red" src="./images/svg/closeX-red.svg" alt=":(">
+                        <img class="close-sm" src="./images/svg/trash.svg" alt=":(">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-4">
+            <div class="tab-descrip-block">
+              <ul class="product-info-block">
+                <li class="product-info-item">
+                  <div class="product-brand-item">Продукт</div>
+                  <div class="product-brand-name">3</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">Скидка</div>
+                  <div class="product-brand-name"> <span>0</span> сум</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-item">ID покупки</div>
+                  <div class="product-brand-name">EF12569</div>
+                </li>
+                <li class="product-info-item">
+                  <div class="product-brand-name product-item-price"> Всего</div>
+                  <div class="product-brand-name product-item-price"><span class="">1 000 299 998
+                    </span><span>сум</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex justify-content-center">
+                    <a href="paymentSingle.html" class="main-btn main-btn-w single-btn">
+                      <span> Купить рассрочку</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}

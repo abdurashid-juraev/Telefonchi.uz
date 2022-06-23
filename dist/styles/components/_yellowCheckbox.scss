@@ -1,0 +1,62 @@
+.filter-checked {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+  input {
+    display: none;
+    cursor: pointer;
+  }
+
+  label {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBlack;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  label:before {
+    content: "";
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid $checkedBg;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: -4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.2s;
+  }
+  input:checked + label::before {
+    background-color: $orangeBg;
+    border: 2px solid $orangeBg;
+  }
+  input:checked + label {
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 5px;
+    height: 7px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}

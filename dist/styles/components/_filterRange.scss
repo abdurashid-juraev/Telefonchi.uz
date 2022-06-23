@@ -1,0 +1,142 @@
+/* Ion.RangeSlider
+// css version 2.0.3
+// Â© 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// RangeSlider */
+
+.irs {
+  position: relative;
+  display: block;
+  user-select: none;
+}
+.irs-line {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  outline: none !important;
+}
+
+.irs-slider {
+  position: absolute;
+  display: block;
+  cursor: default;
+  z-index: 1;
+}
+.irs-slider.single {
+  cursor: pointer;
+}
+
+.irs-from {
+  display: none !important;
+}
+.irs-to {
+  display: none !important;
+}
+
+.irs-min {
+  position: absolute;
+  left: 0;
+  cursor: default;
+  display: none;
+}
+
+.irs-disable-mask {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -1%;
+  width: 102%;
+  height: 100%;
+  cursor: default;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.irs-hidden-input {
+  position: absolute !important;
+  display: block !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+  z-index: -9999 !important;
+  background: none !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+}
+
+/* Ion.RangeSlider, Simple Skin
+// css version 2.0.3
+// Â© Denis Ineshin, 2014    https://github.com/IonDen
+// Â© guybowden, 2014        https://github.com/guybowden
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs {
+  height: 55px;
+}
+
+.irs-line {
+  height: 6px;
+  top: 33px;
+  background: rgba(14, 24, 44, 0.1);
+  border-radius: 10px;
+}
+
+.irs-slider {
+  top: 25px;
+  width: 22px;
+  height: 22px;
+  border: 7px solid $orangeBg;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#form-group {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  input {
+    background-color: transparent;
+    padding: 12px 15px 13px 15px;
+    background: #ffffff;
+    border: 1px solid rgba(93, 95, 239, 0.2);
+    border-radius: 6px;
+    width: 130px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorBlue;
+  }
+}
+.extra-controls {
+  .range-slider .irs .js-irs-0 .irs-bar {
+    height: 50px;
+    width: 100px;
+    top: 33px;
+    background-color: #ffc105;
+  }
+  margin-top: 20px;
+}
+.irs-max {
+  visibility: hidden;
+  display: none;
+}
+
+.irs-bar {
+  position: absolute;
+  height: 6px;
+  top: 33px;
+  background-color: $orangeBg;
+}
